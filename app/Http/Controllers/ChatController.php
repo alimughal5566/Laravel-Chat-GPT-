@@ -19,7 +19,7 @@ class ChatController extends Controller
             /** @var array $response */
             $response = Http::withHeaders([
                 "Content-Type" => "application/json",
-                "Authorization" => "Bearer " . env('CHAT_GPT_KEY')
+                "Authorization" => "Bearer " . env('OPEN_AI')
             ])->post('https://api.openai.com/v1/chat/completions', [
                 "model" => $request->post('model'),
                 "messages" => [
