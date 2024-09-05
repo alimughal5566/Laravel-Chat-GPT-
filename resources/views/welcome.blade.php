@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Chat GPT Laravel</title>
-    <link rel="icon" href="https://assets.edlin.app/favicon/favicon.ico"/>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/70640438?v=4&size=64"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- JavaScript -->
@@ -20,9 +20,9 @@
 
     <!-- Header -->
     <div class="top">
-        <img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">
+        <img src="https://avatars.githubusercontent.com/u/70640438?v=4&size=64" alt="Avatar">
         <div>
-            <p>Ross Edlin</p>
+            <p>Muhammad Ali</p>
             <small>Online</small>
         </div>
     </div>
@@ -31,8 +31,8 @@
     <!-- Chat -->
     <div class="messages">
         <div class="left message">
-            <img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">
-            <p>Start chatting with Chat GPT AI below!!</p>
+            <img src="https://avatars.githubusercontent.com/u/70640438?v=4&size=64" alt="Avatar">
+            <p>Let's Play With AI !! </p>
         </div>
     </div>
     <!-- End Chat -->
@@ -64,7 +64,7 @@
         $("form button").prop('disabled', true);
 
         $.ajax({
-            url: "/chat",
+            url: "/chat_gpt",
             method: 'POST',
             headers: {
                 'X-CSRF-TOKEN': "{{csrf_token()}}"
@@ -78,12 +78,12 @@
             //Populate sending message
             $(".messages > .message").last().after('<div class="right message">' +
                 '<p>' + $("form #message").val() + '</p>' +
-                '<img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">' +
+                '<img src="https://avatars.githubusercontent.com/u/70640438?v=4&size=64" alt="Avatar">' +
                 '</div>');
 
             //Populate receiving message
             $(".messages > .message").last().after('<div class="left message">' +
-                '<img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">' +
+                '<img src="https://avatars.githubusercontent.com/u/70640438?v=4&size=64" alt="Avatar">' +
                 '<p>' + res + '</p>' +
                 '</div>');
 
